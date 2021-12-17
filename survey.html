@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="survey-style.css">
+    <title>Kpop Survey</title>
+</head>
+<body>
+    <h1 id="title">Best Kpop Group Survey</h1>
+<p id="description">
+  Choose your favorite kpop group
+</p>
+<form id="survey-form">
+  <div id="group">
+  <label id="name-label">Name:</label>
+  <input id="name" type="text" placeholder="First and Last name" class="input-control" required>
+  </div>
+  <div id="group">
+  <label id="email-label">Email:</label>
+    <input id="email" type="email" placeholder="Enter email" class="input-control" required>
+  </div>
+  <div id="group">
+  <label id="number-label">Phone Number:</label>
+  <input id="number" type="tel" placeholder="Enter number" class="input-control" min="100000000" max="9999999999" required>
+  </div>
+  <div id="group">
+    <label id="kpopgroup-label">Kpop Group:</label>
+    <select id="dropdown" class="input-control" placeholder="Select an option">
+      <option disabled selected value>Select an option</option>
+      <option value="bts">BTS</option>
+      <option value="blackpink">Blackpink</option>
+      <option value="twice">Twice</option>
+      <option value="nct">NCT</option>
+      <option value="itzy">ITZY</option>
+      <option value="red-velvet">Red Velvet</option>
+    </select>
+   </div>
+    <div id="group">
+      <label id="age">Age:</label>
+      <label for="age1"><input type="radio" name="age" value="30" class="input-radio" checked>1 - 30</label>
+      <label for="age2">
+        <input type="radio" name="age" value="60" class="input-radio">31 - 60
+      </label>
+      <label for="age3"><input type="radio" name="age" value="100" class="input-radio">61 and over</label>
+    </div>
+    <div id="group">
+      <label>What other genres do you listen to?</label>
+      <label><input type="checkbox" value="edm" class="input-checkbox">EDM</label>
+      <label><input type="checkbox" value="hiphop" class="input-checkbox">Hip hop</label>
+      <label><input type="checkbox" value="rock" class="input-checkbox">Rock</label>
+      <label><input type="checkbox" value="rnb" class="input-checkbox">RnB</label>
+      <label><input type="checkbox" value="country" class="input-checkbox">Country</label>
+      </div>
+  <div id="group">
+    <label>Additional Comments</label>
+    <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter your comment here..."
+              ></textarea>
+    <div class="group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+    </form>
+  
+</body>
+</html>
